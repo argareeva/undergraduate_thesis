@@ -9,15 +9,27 @@
 Чтобы запустить проект, необходимо установить SberPM и Graphviz на macOS.
 
 1. Установить Python 3.10
+
 `brew install python@3.10`
+
 `python3.10 --version`
+
 3. Создать виртуальное окружение
+
 `pip install --upgrade pip setuptools wheel`
+
 `pip install sberpm graphviz jupyter`
+
 4. Установить Graphviz
+
 `brew install graphviz`
+
 `dot -V`
+
 6. Подключить виртуальное окружение к Jupyter
+
 `pip install ipykernel`
+
 `python -m ipykernel install --user --name=sberpm_env --display-name "Python (SberPM)"`
+
 `jupyter notebook`
