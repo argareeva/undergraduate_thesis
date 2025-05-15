@@ -1,12 +1,12 @@
 # undergraduate_thesis
 
-Дипломный проект посвящен анализу процесса найма с использованием библиотеки SberPM. 
+Дипломный проект посвящен анализу процесса найма с использованием методов Process Mining и Reinforcement Learning алгоритмов. 
 
-В проекте используются реальные данные, преобразованные в нужный формат, что позволяет строить графы процесса, выявлять узкие места и моделировать различные сценарии для его оптимизации.
+В проекте используются реальные данные, преобразованные в нужный формат. Анализ заключается в построении графа процесса, выявлении узких мест и моделировании различных сценарии для его оптимизации.
 
-## Установка SberPM на macOS
+## Установка библиотек и запуск проекта
 
-Чтобы запустить проект, необходимо установить SberPM и Graphviz (пример установки на macOs).
+Чтобы запустить проект, необходимо:
 
 1. Установить Python 3.10
 
@@ -16,20 +16,24 @@
 
 3. Создать виртуальное окружение
 
-`pip install --upgrade pip setuptools wheel`
+`python -m venv venv`
 
-`pip install sberpm graphviz jupyter`
+`source venv/bin/activate  # Linux/macOS`
 
-4. Установить Graphviz
+`.\\venv\\Scripts\\activate  # Windows`
 
-`brew install graphviz`
+4. Установить необходимые библиотеки
 
-`dot -V`
+`pip install sberpm streamlit pandas numpy matplotlib graphviz`
 
-6. Подключить виртуальное окружение к Jupyter
+5. Загрузить и распаковать архив по ссылке https://github.com/argareeva/undergraduate_thesis[https://github.com/argareeva/undergraduate_thesis].
 
-`pip install ipykernel`
+6. Запустить приложение перейдя в нужную папку на своем устройстве:
 
-`python -m ipykernel install --user --name=sberpm_env --display-name "Python (SberPM)"`
+`cd /путь к папке/app`
 
-`jupyter notebook`
+`streamlit run app.py`
+
+7. Перейти в браузер по локальному адресу: http://localhost:8501[http://localhost:8501]
+
+8. Загрузить тестовые данные. Доступны в текущем репозитории с названием HR_log_obezlich.csv.
