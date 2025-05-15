@@ -16,15 +16,17 @@
 
 3. Создать виртуальное окружение
 
-`python -m venv venv`
+`python3.10 -m venv venv`
 
 `source venv/bin/activate  # Linux/macOS`
 
 `.\\venv\\Scripts\\activate  # Windows`
 
+`pip install --upgrade pip setuptools wheel`
+
 4. Установить необходимые библиотеки
 
-`pip install sberpm streamlit pandas numpy matplotlib graphviz`
+`pip install sberpm streamlit pandas numpy matplotlib graphviz gymnasium`
 
 5. Загрузить и распаковать архив по ссылке [https://github.com/argareeva/undergraduate_thesis].
 
@@ -34,6 +36,6 @@
 
 `streamlit run app.py`
 
-7. Перейти в браузер по локальному адресу: http://localhost:8501
+7. Перейти в браузер по локальному адресу
 
 8. Загрузить тестовые данные. Доступны в текущем репозитории с названием HR_log_obezlich.csv.
