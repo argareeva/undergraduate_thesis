@@ -26,7 +26,7 @@
 
 `pip install sberpm streamlit pandas numpy matplotlib graphviz`
 
-5. Загрузить и распаковать архив по ссылке https://github.com/argareeva/undergraduate_thesis[https://github.com/argareeva/undergraduate_thesis].
+5. Загрузить и распаковать архив по ссылке [https://github.com/argareeva/undergraduate_thesis].
 
 6. Запустить приложение перейдя в нужную папку на своем устройстве:
 
@@ -34,6 +34,6 @@
 
 `streamlit run app.py`
 
-7. Перейти в браузер по локальному адресу: http://localhost:8501[http://localhost:8501]
+7. Перейти в браузер по локальному адресу: [http://localhost:8501]
 
 8. Загрузить тестовые данные. Доступны в текущем репозитории с названием HR_log_obezlich.csv.
